@@ -1,0 +1,311 @@
+/* Sayfanın genel ayarları ve sıfırlamaları */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+body {
+    background-color: #f3f3f3;
+    color: #15151e;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navigasyon barı için flexbox kullandım */
+header {
+    background-color: #15151e;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+header .logo .text-logo {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Ana içerik alanı */
+main {
+    flex: 1;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Hero Alanı */
+.hero {
+    background-color: #15151e;
+    color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center 80%; /* Görseldeki arabaları merkeze daha iyi hizalamak için */
+}
+
+.hero-icerik {
+    padding: 2rem;
+    text-align: center;
+}
+
+.hero-icerik h1 {
+    color: #e10600;
+    margin-bottom: 1rem;
+}
+
+/* Ürünleri yan yana dizmek için grid kullandım */
+.urun-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 2rem;
+}
+
+/* Ürün Kartı Tasarımı */
+.urun-kart {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.urun-kart img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.urun-kart h3 {
+    margin-bottom: 0.5rem;
+}
+
+.urun-kart .fiyat {
+    color: #e10600;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Buton Tasarımları */
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #e10600;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-secondary {
+    background-color: #15151e;
+}
+
+/* Ürün Detay Sayfası */
+.urun-detay-kapsayici {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.urun-detay-resim {
+    flex: 1;
+    min-width: 300px;
+}
+
+.urun-detay-resim img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+}
+
+.urun-detay-bilgi {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.urun-detay-bilgi h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.urun-detay-bilgi .fiyat {
+    font-size: 1.5rem;
+    color: #e10600;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.urun-detay-bilgi p {
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+/* Sepet Tablosu */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #15151e;
+    color: #ffffff;
+}
+
+.sepet-aksiyonlar {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+/* İletişim Formu */
+.iletisim-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.iletisim-bilgileri h3, .iletisim-formu h3 {
+    margin-bottom: 1rem;
+    color: #e10600;
+}
+
+.iletisim-bilgileri p {
+    margin-bottom: 0.5rem;
+}
+
+.form-grup {
+    margin-bottom: 1rem;
+}
+
+.form-grup label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-grup input, .form-grup textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Quiz Alanı */
+.quiz-alani {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.quiz-soru {
+    margin-bottom: 1.5rem;
+}
+
+.quiz-soru h4 {
+    margin-bottom: 0.5rem;
+}
+
+.quiz-secenek {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Footer Tasarımı */
+footer {
+    background-color: #15151e;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: auto;
+}
+
+/* Extra Utility Classes */
+.baslik-kirmizi {
+    margin-bottom: 1rem; 
+    color: #e10600;
+}
+
+.quiz-sonuc-yazi {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #e10600;
+}
+
+.bos-sepet-mesaj {
+    text-align: center;
+}
+
+/* JavaScript ile eleman gizlemek için kullanılacak sınıf */
+.gizli {
+    display: none;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .iletisim-container {
+        grid-template-columns: 1fr;
+    }
+}

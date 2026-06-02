@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - F1 2026</title>
+    <!-- CSS dosyasını dışarıdan bağlıyoruz (Bir üst dizinden) -->
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <!-- Navigasyon Alanı -->
+    <header>
+        <div class="logo">
+            <a href="../index.html" class="text-logo">F1 2026 MAĞAZASI</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Ana Sayfa</a></li>
+                <li><a href="urunler.html">Ürünler</a></li>
+                <li><a href="sepet.html">Sepet</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- İletişim Alanı -->
+        <section>
+            <h2>Bize Ulaşın</h2>
+            <div class="iletisim-container">
+                
+                <!-- Adres Bilgileri -->
+                <div class="iletisim-bilgileri">
+                    <h3>İletişim Bilgilerimiz</h3>
+                    <p><strong>Adres:</strong> Düzce Üniversitesi, Konuralp Yerleşkesi, Yönetim Bilişim Sistemleri Bölümü</p>
+                    <p><strong>Telefon:</strong> 0(380) 555 55 55</p>
+                    <p><strong>E-posta:</strong> iletisim@f12026.com</p>
+                    <p>Sorularınız için bizimle form aracılığıyla da iletişime geçebilirsiniz.</p>
+                </div>
+
+                <!-- İletişim Formu -->
+                <div class="iletisim-formu">
+                    <h3>Mesaj Gönder</h3>
+                    <!-- Form gönderimi JS tarafından engellenip (preventDefault) ekrana alert verilecek -->
+                    <form id="iletisim-formu">
+                        <div class="form-grup">
+                            <label for="ad-soyad">Ad Soyad:</label>
+                            <input type="text" id="ad-soyad" name="ad-soyad" required>
+                        </div>
+                        <div class="form-grup">
+                            <label for="email">E-posta Adresi:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-grup">
+                            <label for="mesaj">Mesajınız:</label>
+                            <textarea id="mesaj" name="mesaj" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Gönder</button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Alt Kısım -->
+    <footer>
+        <p>Hazırlayan: Enes Çetin - Düzce Üniversitesi Yönetim Bilişim Sistemleri</p>
+    </footer>
+
+    <!-- JS dosyasını dışarıdan bağlıyoruz (Bir üst dizinden) -->
+    <script src="../scripts/myscript.js"></script>
+</body>
+</html>

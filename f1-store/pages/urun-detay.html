@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürün Detayı - F1 2026</title>
+    <!-- CSS dosyasını dışarıdan bağlıyoruz (Bir üst dizinden) -->
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <!-- Navigasyon Alanı -->
+    <header>
+        <div class="logo">
+            <a href="../index.html" class="text-logo">F1 2026 MAĞAZASI</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Ana Sayfa</a></li>
+                <li><a href="urunler.html">Ürünler</a></li>
+                <li><a href="sepet.html">Sepet</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Ürün Detay Şablonu -->
+        <section class="urun-detay-kapsayici">
+            <!-- Sol Taraf: Resim -->
+            <div class="urun-detay-resim">
+                <img id="detay-resim" src="" alt="Yükleniyor...">
+            </div>
+            
+            <!-- Sağ Taraf: Bilgiler -->
+            <div class="urun-detay-bilgi">
+                <h2 id="detay-ad">Yükleniyor...</h2>
+                <p id="detay-fiyat" class="fiyat"></p>
+                <p id="detay-aciklama"></p>
+                <!-- data-id bilgisi JS tarafından dinamik olarak atanacak -->
+                <button id="detay-sepet-btn" class="btn sepet-ekle-btn">Sepete Ekle</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Alt Kısım -->
+    <footer>
+        <p>Hazırlayan: Enes Çetin - Düzce Üniversitesi Yönetim Bilişim Sistemleri</p>
+    </footer>
+
+    <!-- JS dosyasını dışarıdan bağlıyoruz (Bir üst dizinden) -->
+    <script src="../scripts/myscript.js"></script>
+</body>
+</html>

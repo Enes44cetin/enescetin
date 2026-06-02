@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 2026 - Avustralya Açılışı</title>
+    <!-- CSS dosyasını dışarıdan bağlıyoruz -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- Navigasyon Alanı -->
+    <header>
+        <div class="logo">
+            <a href="index.html" class="text-logo">F1 2026 MAĞAZASI</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="pages/urunler.html">Ürünler</a></li>
+                <li><a href="pages/sepet.html">Sepet</a></li>
+                <li><a href="pages/iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Alanı -->
+        <section class="hero">
+            <img src="img/avustralya.png" alt="Avustralya Grand Prix">
+            <div class="hero-icerik">
+                <h1>2026 Formula 1 Sezonuna Hoşgeldiniz!</h1>
+                <p>Yeni kurallar, yeni araçlar ve heyecan verici sezonun başlangıcı Avustralya Grand Prix'sinde yaşanıyor. Favori takımını desteklemek için resmi ürünleri hemen keşfet!</p>
+            </div>
+        </section>
+
+        <!-- Öne Çıkan Ürünler Alanı -->
+        <section>
+            <h2 class="baslik-kirmizi">Öne Çıkan Ürünler</h2>
+            <!-- JS'den sadece 3 ürünü alması için data-limit kullanıyoruz -->
+            <div id="urun-listesi" class="urun-grid" data-limit="3">
+                <!-- Burası JavaScript ile dinamik olarak doldurulacak -->
+            </div>
+        </section>
+
+        <!-- F1 Bilgi Testi Quiz Alanı -->
+        <section class="quiz-alani">
+            <h2>F1 2026 Sezonu Bilgi Testi</h2>
+            <div class="quiz-sorular">
+                <div class="quiz-soru">
+                    <h4>1. 2026 Formula 1 sezonunda hangi efsanevi otomobil üreticisi fabrika takımı olarak spora katılacaktır?</h4>
+                    <label class="quiz-secenek"><input type="radio" name="soru1" value="audi"> Audi</label>
+                    <label class="quiz-secenek"><input type="radio" name="soru1" value="porsche"> Porsche</label>
+                    <label class="quiz-secenek"><input type="radio" name="soru1" value="bmw"> BMW</label>
+                </div>
+
+                <div class="quiz-soru">
+                    <h4>2. 2026 sezonu itibarıyla Formula 1 motorlarında (güç ünitelerinde) hangi önemli değişiklik yapılacaktır?</h4>
+                    <label class="quiz-secenek"><input type="radio" name="soru2" value="elektrikli"> Tamamen elektrikli motora geçilecektir</label>
+                    <label class="quiz-secenek"><input type="radio" name="soru2" value="v8"> V8 atmosferik motorlara geri dönülecektir</label>
+                    <label class="quiz-secenek"><input type="radio" name="soru2" value="hibrit"> %100 sürdürülebilir yakıtlı ve artırılmış elektrik gücüne sahip V6 hibrit kullanılacaktır</label>
+                </div>
+
+                <div class="quiz-soru">
+                    <h4>3. 2026 yılından itibaren İspanya Grand Prix'sine ev sahipliği yapacak olan yeni pist hangi şehirdedir?</h4>
+                    <label class="quiz-secenek"><input type="radio" name="soru3" value="madrid"> Madrid</label>
+                    <label class="quiz-secenek"><input type="radio" name="soru3" value="barselona"> Barselona</label>
+                    <label class="quiz-secenek"><input type="radio" name="soru3" value="valensiya"> Valensiya</label>
+                </div>
+
+                <button id="quiz-hesapla" class="btn">Sonucu Gör</button>
+                <p id="quiz-sonuc" class="quiz-sonuc-yazi"></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Alt Kısım -->
+    <footer>
+        <p>Hazırlayan: Enes Çetin - Düzce Üniversitesi Yönetim Bilişim Sistemleri</p>
+    </footer>
+
+    <!-- JS dosyasını dışarıdan bağlıyoruz -->
+    <script src="scripts/myscript.js"></script>
+</body>
+</html>
